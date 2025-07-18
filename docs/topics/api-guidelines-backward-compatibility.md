@@ -154,9 +154,9 @@ fun fib(input: Int) = …
 
 Use caution when using [`@JvmOverloads`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/) to create overloads
 for binary compatibility. 
-Even though the annotation generate one overload of the function per default parameter, when Kotlin clients call the
-function without including all the parameters the compiled code will use a synthetitc `$default` version. When a new default parameter
-is added to the function the synthetic version of the method will change; this will break binary compatitbility for code that compiled against
+Even though the annotation generates one overload of the function per default parameter, when Kotlin clients call the
+function without including all the parameters then the compiled code will use a synthetitc `$default` version. When a new default parameter
+is added to the function the synthetic version of the function will change; this will break binary compatitbility for code that compiled against
 older versions of the library.
 
 ## Avoid widening or narrowing return types
